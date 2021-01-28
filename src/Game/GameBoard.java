@@ -45,6 +45,9 @@ public class GameBoard extends JFrame implements MouseListener {
 
     }
     @Override
+    /**
+     * Moving the desired piece by clicking on it
+     */
     public void mouseClicked(MouseEvent e) {
 
         int row = this.getBoardDimensionBasedOnCoordinates(e.getY());
@@ -98,8 +101,21 @@ public class GameBoard extends JFrame implements MouseListener {
             }
         }
         paintTurtles(g);
+        LeaderPiece leaderPiece = new LeaderPiece(0,4,Color.GREEN);
+        LeaderPiece leaderPiece2 = new LeaderPiece(4,0,Color.YELLOW);
+        leaderPiece.render(g);
+        leaderPiece2.render(g);
+
 
     }
+
+    /**
+     *
+     * @param g
+     * @param row
+     * @param col
+     * Rendering game pieces
+     */
     private void renderGamePiece(Graphics g, int row,int col){
 
         if(this.hasBoardPiece(row,col)){
@@ -117,6 +133,10 @@ private int getBoardDimensionBasedOnCoordinates(int coordinates){
         return coordinates / GameTile.TILE_SIZE;
 }
 
+    /**
+     * Generating random number from one to five
+     * @return Returning random number for the position of the turtles
+     */
     public int randomTurtleGenerator(){
         Random random = new Random();
         int numOne = random.nextInt(5);
@@ -141,7 +161,7 @@ private int getBoardDimensionBasedOnCoordinates(int coordinates){
 
         }
     }
-    
+
 }
 
 

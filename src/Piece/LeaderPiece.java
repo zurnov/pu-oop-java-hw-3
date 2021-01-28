@@ -41,5 +41,9 @@ public class LeaderPiece {
         this.row= row;
         this.col = col;
     }
+    public  void paint(Graphics g){
+        g.setColor(Color.green);
+        g.fillRect(400,0+GameTile.EXTRA_SPACE,60,60);
+    }
 
 }
