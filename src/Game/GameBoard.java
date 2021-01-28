@@ -77,6 +77,9 @@ public class GameBoard extends JFrame implements MouseListener {
 
     }
     @Override
+    /**
+     * Method that paints the board with the pieces and Board's grid
+     */
     public void paint(Graphics g) {
 
         GameTile gameTile = new GameTile(4, 4);

@@ -35,6 +35,14 @@ public class GameTile extends JFrame {
             }
         }
     }
+
+    /**
+     *
+     * @param g
+     * @param row
+     * @param col
+     * Method for checking the received color and change it for the desired one.
+     */
     public void colorSwitcher(Graphics g,int row,int col){
         if (isTileOrange(row, col)) {
             g.setColor(new Color(252, 90, 3));
@@ -83,9 +91,7 @@ public class GameTile extends JFrame {
             }
         }
     }
-    public void renderTurle(Graphics g){
 
-    }
 
 
 
