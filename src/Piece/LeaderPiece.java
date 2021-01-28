@@ -30,10 +30,10 @@ public class LeaderPiece {
     public void render(Graphics g) {
 
         int x = this.col * GameTile.TILE_SIZE;
-        int y = this.row * GameTile.TILE_SIZE + GameTile.extraSpace;
+        int y = this.row * GameTile.TILE_SIZE + GameTile.EXTRA_SPACE;
 
         g.setColor(this.color);
-        g.fillRect(x+GameTile.extraSpace,y+GameTile.extraSpace,60, 60);
+        g.fillRect(x+GameTile.EXTRA_SPACE,y+GameTile.EXTRA_SPACE,60, 60);
 
     }
 

@@ -8,7 +8,7 @@ public class GameTile extends JFrame {
     private int row;
     private int col;
     public static final int TILE_SIZE = 100;
-    public static final int extraSpace = 20;
+    public static final int EXTRA_SPACE = 20;
 
     public GameTile(int row,int col){
         this.row = row;
@@ -87,7 +87,7 @@ public class GameTile extends JFrame {
         for (int x = 0; x<5;x++){
             for (int y = 0; y<5;y++){
                 colorSwitcher(g,y,x);
-                g.fillRect(x*TILE_SIZE,y*TILE_SIZE+extraSpace,TILE_SIZE,TILE_SIZE);
+                g.fillRect(x*TILE_SIZE,y*TILE_SIZE+ EXTRA_SPACE,TILE_SIZE,TILE_SIZE);
             }
         }
     }

@@ -29,10 +29,10 @@ public class GuardPiece {
     public void render(Graphics g) {
 
         int x = this.col * GameTile.TILE_SIZE;
-        int y = this.row * GameTile.TILE_SIZE + GameTile.extraSpace;
+        int y = this.row * GameTile.TILE_SIZE + GameTile.EXTRA_SPACE;
 
         g.setColor(this.color);
-            g.fillOval(x+GameTile.extraSpace,y+GameTile.extraSpace,50, 50);
+            g.fillOval(x+GameTile.EXTRA_SPACE,y+GameTile.EXTRA_SPACE,50, 50);
         paintOuterPieceColor(g,x,y);
     }
     public void paintOuterPieceColor(Graphics g,int x,int y){
@@ -42,7 +42,7 @@ public class GuardPiece {
         else {
             g.setColor(Color.yellow);
         }
-        g.fillOval(x+GameTile.extraSpace+2,y+GameTile.extraSpace+2,45, 45);
+        g.fillOval(x+GameTile.EXTRA_SPACE +2,y+GameTile.EXTRA_SPACE +2,45, 45);
     }
     public void move(int row,int col){
         this.row= row;
