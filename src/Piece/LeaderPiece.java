@@ -15,14 +15,7 @@ public class LeaderPiece {
         this.color = color;
 
     }
-//    public boolean isMoveValid(int moveRow,int moveCol){
-//        int rowCoefficient = Math.abs(moveRow - this.row);
-//        int colCoefficient = moveCol - this.col;
-//
-//        return  rowCoefficient == 1 &&
-//                colCoefficient == 0;
-//
-//    }
+
     public boolean isAttackValid(int attackRow, int attackCol) {
         return false;
     }

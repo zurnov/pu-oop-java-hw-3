@@ -15,8 +15,6 @@ public class GameBoard extends JFrame implements MouseListener {
     public static final int TILE_SIDE_COUNT = 5;
         private Object[][] pieceCollection;
         private Object selectedPiece;
-        public int numOne;
-        public int numTwo;
 
     public  GameBoard(){
         this.pieceCollection = new Object[TILE_SIDE_COUNT][TILE_SIDE_COUNT];
